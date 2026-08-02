@@ -14,6 +14,16 @@
       "content": "GET and POST are the most important method of HTTP protocol",
       "important": false,
       "id": "869_Y6W638I"
+    },
+    {
+      "content": "Post is used to add data to a REST API",
+      "important": true,
+      "id": "eba5uiQjajs"
+    },
+    {
+      "content": "Network tab of devtools is most beneficial",
+      "important": false,
+      "id": "QVZPzl2tM4k"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

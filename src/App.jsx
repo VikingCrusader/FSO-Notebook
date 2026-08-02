@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Note from "./components/Note";
 import noteService from "./services/notes";
+import Footer from "./components/Footer";
 
 const App = (props) => {
   const [notes, setNotes] = useState([]);
@@ -61,7 +62,11 @@ const App = (props) => {
         setNotes(notes.map((note) => (note.id !== id ? note : returnedNote)));
       })
       .catch((error) => {
-        console.error("Error updating note:", error);
+        setErrorMessage(`Note '${note.content}' was already removed from server`);
+        setTimeout(() => {
+          setErrorMessage(null);
+        }, 5000);
+        setNotes(notes.filter((n) => n.id !== id));
       });
   };
 
@@ -102,6 +107,7 @@ const App = (props) => {
         <input value={newNote} onChange={handleNoteChange} />
         <button type="submit">save</button>
       </form>
+      <Footer />
     </div>
   );
 };

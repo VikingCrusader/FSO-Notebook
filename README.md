@@ -55,11 +55,15 @@ A simple React + Vite note-taking app that lets you create, view, mark as import
 - npm run lint: run ESLint
 - npm run server: start the JSON Server backend on port 3001
 
-## Version & Learning Notes
+## Version Iterations & Learning Notes
 
-Aug 2nd, 2026
+Aug 2nd, 2026 <br />
 Added CRUD methods for the communication of React client and JSON server
 Moved Notebook out as a new Repo.
 ![App Screenshot Placeholder](./images/img1.png)
-
+finished p2e1, added css style for the title and note contents, use 'className' instead of 'class' in React.
+![App Screenshot Placeholder](./images/img2.png)
+Added Inline Styles and a Footer of the Notebook App. <br />
+The structural units that make up application functionality are React components. A React component defines the HTML that constructs the content, the JavaScript functions that determine the functionality, and the component's styles; all of this is defined in one place. This is to create individual components that are as independent and reusable as possible.
+![App Screenshot Placeholder](./images/img3.png)
 
