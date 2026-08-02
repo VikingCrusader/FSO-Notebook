@@ -1,16 +1,65 @@
-# React + Vite
+# Notebook
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React + Vite note-taking app that lets you create, view, mark as important, and delete notes. Notes are stored locally through JSON Server so changes persist between refreshes.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- View a list of notes loaded from a local API
+- Add new notes with a form input
+- Toggle a note between important and non-important
+- Delete notes from the list
+- Filter the list to show only important notes or all notes
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite
+- Axios for API requests
+- JSON Server for a local REST API
+- ESLint for code quality checks
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- src/App.jsx: main application logic and UI
+- src/components/Note.jsx: individual note row component
+- src/services/notes.js: API service layer for note operations
+- db.json: local JSON database used by JSON Server
+
+## Getting Started
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Start the JSON Server backend:
+
+   ```bash
+   npm run server
+   ```
+
+3. In a second terminal, start the Vite frontend:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open the local Vite URL shown in the terminal (usually http://localhost:5173).
+
+## Available Scripts
+
+- npm run dev: start the Vite development server
+- npm run build: build the app for production
+- npm run preview: preview the production build locally
+- npm run lint: run ESLint
+- npm run server: start the JSON Server backend on port 3001
+
+## Version & Learning Notes
+
+Aug 2nd, 2026
+Added CRUD methods for the communication of React client and JSON server
+Moved Notebook out as a new Repo.
+![App Screenshot Placeholder](./images/img1.png)
+
+

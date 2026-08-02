@@ -1,14 +1,19 @@
 {
   "notes": [
     {
-      "content": "useEffect",
-      "important": false,
-      "id": "JtJtEmilt54"
+      "content": "HTML is easy",
+      "important": true,
+      "id": "LM2nFkwz9cU"
     },
     {
-      "content": "useState",
+      "content": "Browser can execute only Javascript",
+      "important": true,
+      "id": "aZ03deIT3Kg"
+    },
+    {
+      "content": "GET and POST are the most important method of HTTP protocol",
       "important": false,
-      "id": "IKeADCH0auo"
+      "id": "869_Y6W638I"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
